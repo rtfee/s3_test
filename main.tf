@@ -7,7 +7,7 @@ resource "aws_s3_bucket" "scalr" {
   acl    = "private"
 
   tags = {
-    Name        = "My bucket"
+    Name        = var.bucket_name_tag
     Environment = "Dev"
   }
 }
